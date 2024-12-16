@@ -1,87 +1,102 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+    font-family: 'KOHIBaeum';
+    src: url(./assets/fonts/KOHIBaeum.woff) format('woff'), url(./assets/fonts/KOHIBaeum.ttf) format('ttf');
+}
 
 * {
-	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-	font-size: 10px;
-	padding: 0;
-	margin: 0;
-	word-break: keep-all;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
 }
+
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	--black: #000000;
-	--ash-black: #222;
-	--white: #fafafa;
-	--sky: #00ccff;
-	--green: #22dddd;
-	--blue: #1300ff;
-	--dusk: #6600ff;
-	--purple: #9900ff;
-	--pink: #ff0066;
-	--red: #fe0222;
-	--orange: #fd7702;
-	--yellow: #ffbb00;
-
-	--background: var(--white);
-	--accent: #5f5f5f;
-
-	margin: 0;
-	padding: 0;
-	background-color: var(--background);
-	color: var(--black);
+    font-family: KOHIBaeum;
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+    --background: var(--white);
+    --accent: #5f5f5f;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--black);
 }
 
-* {
-	/* font-family: sofia-pro, sans-serif; */
-	font-weight: 400;
-	font-style: normal;
-	-webkit-font-smoothing: antialiased;
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+
+button:last-of-type {
+    margin-right: 0;
+}
+
+button.active {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 ::-webkit-scrollbar {
-	height: 5px;
-	width: 5px;
-	background: var(--background);
+    height: 5px;
+    width: 5px;
+    background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--accent);
-	-webkit-border-radius: 1ex;
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
 }
 
 ::-webkit-scrollbar-corner {
-	background: var(--background);
+    background: var(--background);
 }
 
 html {
-	scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 ul,
 li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-	margin: 0;
-	border-width: 0;
-	background: none;
-	outline: none;
-	appearance: none;
-	text-decoration: none;
-	color: black;
+    margin: 0;
+    border-width: 0;
+    background: none;
+    outline: none;
+    appearance: none;
+    text-decoration: none;
+    color: black;
 }
+
 a img {
-	border: 0;
-	outline: 0;
+    border: 0;
+    outline: 0;
 }
 
 #root {
-	height: 100%;
+    height: 100%;
 }
