@@ -137,18 +137,18 @@ function Maps() {
 		<div id='map'>
 			<div className="btn-box">
 				<div className={`btn ${selectMapOpen ? 'active' : ''}`} onClick={() => setSelectMapOpen(!selectMapOpen)}>
-					<img src="/images/icMap.svg" alt="map icon" />
+					<img src="/dgu/images/icMap.svg" alt="map icon" />
 					<p>Map</p>
 				</div>
 				{
 					selectMapOpen && (
 						<div className="map-box">
 							<div className={selectMap === 'base' ? 'image-box active' : 'image-box'} onClick={() => handleChangeMap('base')}>
-								<img src="/images/base.png" alt="base" />
+								<img src="/dgu/images/base.png" alt="base" />
 								<div className="map-name">Base</div>
 							</div>
 							<div className={selectMap === 'satellite' ? 'image-box active' : 'image-box'} onClick={() => handleChangeMap('satellite')}>
-								<img src="/images/satellite.png" alt="satellite" />
+								<img src="/dgu/images/satellite.png" alt="satellite" />
 								<div className="map-name">Satellite</div>
 							</div>
 						</div>
